@@ -189,6 +189,8 @@
 
 	(kill-buffer zd-temp-buffer)
 
+	(insert (concat "Total: " (number-to-string (length ids)) "\n"))
+
 	(setq i 0)
 	(while (< i (length ids))
 		(insert-button (concat (nth i ids) " -> " (nth i subjects)) 
